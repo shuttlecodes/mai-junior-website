@@ -1,0 +1,209 @@
+.headerContainer {
+    background-color: var(--primary);
+    padding: 36px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.headerContainer img{
+    max-width: 100%;
+}
+
+.subTitleText {
+    font-size: 24px;
+    color: var(--primary-light);
+    font-style: italic;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.titleText {
+    font-size: 36px;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.aboutSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--text-light);
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-basis: 60%;
+}
+
+.imageContainer img {
+    width: 100%;
+    max-width: calc(100% - 10px);
+    height: auto;
+}
+
+.aboutText {
+    flex-basis: 35%;
+    padding-left: 20px;
+}
+
+.aboutText h2 {
+    font-size: 30px;
+    color: var(--base);
+    margin-bottom: 10px;
+}
+
+.aboutText p {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.readMore {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--base);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.readMore:hover{
+    background-color: var(--secondary);
+}
+
+.missionSection {
+    padding: 50px;
+    background-color: #fff; /* Light background color */
+    text-align: left;
+}
+
+.missionSection h2 {
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 40px;
+}
+
+.missionItems {
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.missionItem {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 20px;
+}
+
+.number {
+    font-size: 120px;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-right: 20px;
+}
+
+.missionItem p {
+    font-size: 18px;
+    color: var(--text);
+    margin: 0;
+}
+
+.programSection {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.programSection h2 {
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.programSection p {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.programCards {
+    display: flex;
+    overflow-x: auto;
+    padding: 40px;
+    scroll-snap-type: x mandatory; /* Ensures smooth snapping */
+}
+
+.programCard {
+    flex: 0 0 250px; /* Fixed width for each card */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start; /* Aligns each card to start on scroll */
+    transition: transform 0.3s ease;
+}
+
+.programCard:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.programCard h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.programCard p {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.contactSection {
+    padding: 60px 20px;
+    background-color: var(--primary);
+    text-align: center;
+    color: var(--text-light);
+}
+
+.contactSection h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contactSection p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: var(--primary-light)
+}
+
+.contactButton {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contactButton:hover {
+    background-color: white;
+    color: var(--secondary);
+}
+  
