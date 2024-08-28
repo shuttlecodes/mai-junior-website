@@ -1,0 +1,88 @@
+.headerContainer {
+    background-color: var(--primary);
+    padding: 36px;
+    text-align: center;
+    align-items: center;
+}
+
+.headerContainer img{
+    max-width: 100%;
+}
+
+.subTitleText {
+    font-size: 20px;
+    color: var(--primary-light);
+    font-style: italic;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.titleText {
+    font-size: 36px;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.programDetails {
+    padding: 50px 50px 25px 50px;
+}
+
+.programDetails h2 {
+    font-size: 24px;
+}
+
+.programDetails h3 {
+    color: var(--secondary);
+    margin: 10px 0;
+}
+
+.programDetails p{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.programDetails .cancellations {
+    color: var(--alert);
+    font-weight: 700;
+}
+
+.programDetails ul{
+    margin-bottom: 10px;
+}
+
+.programDetails li {
+    font-size: 16px;
+    color: var(--base);
+    margin-left: 20px;
+}
+
+.programDetails .registerButton {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    background-color: var(--text-light);
+}
+
+.programOptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .titleText {
+        font-size: 24px;
+    }
+
+    .subTitleText {
+        font-size: 18px;
+    }
+    .programOptions {
+        grid-template-columns: 1fr;
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import {useRef} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "../index.css"
 
 function Navbar() {
@@ -19,10 +20,10 @@ function Navbar() {
         <header>
             <h3>Logo</h3>
             <nav ref={navRef}>
-                <a href="/" className={isActive('/') ? 'active' : ''}>Home</a>
-                <a href="/programs" className={isActive('/programs') ? 'active' : ''}>Programs</a>
-                <a href="/about" className={isActive('/about') ? 'active' : ''}>About</a>
-                <a href="/contact" className={isActive('/contact') ? 'active' : ''}>Contact Us</a>
+                <Link to="/" className={isActive('/') ? 'active' : ''}>Home</Link>
+                <Link to="/programs" className={isActive('/programs') ? 'active' : ''}>Programs</Link>
+                <Link to="/about" className={isActive('/about') ? 'active' : ''}>About</Link>
+                <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>Contact Us</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>

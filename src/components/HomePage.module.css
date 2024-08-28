@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 20px;
 }
 
 .headerContainer img{
@@ -27,30 +28,23 @@
 
 .aboutSection {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
     background-color: var(--text-light);
+    gap: 20px;
 }
 
-.imageContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-    flex-basis: 60%;
-}
-
-.imageContainer img {
-    width: 100%;
-    max-width: calc(100% - 10px);
+.aboutSection img {
+    width: calc(100% - 20px);
     height: auto;
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .aboutText {
     flex-basis: 35%;
-    padding-left: 20px;
 }
 
 .aboutText h2 {
@@ -94,6 +88,7 @@
     padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .missionItem {
@@ -143,11 +138,13 @@
 }
 
 .programCard {
+    text-align: center;
     flex: 0 0 250px; /* Fixed width for each card */
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
+    text-decoration: none;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     scroll-snap-align: start; /* Aligns each card to start on scroll */
@@ -206,4 +203,60 @@
     background-color: white;
     color: var(--secondary);
 }
-  
+
+@media only screen and (max-width: 1024px){
+    .headerContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .titleText {
+        font-size: 24px;
+    }
+
+    .subTitleText {
+        font-size: 18px;
+    }
+
+    .aboutSection {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    .aboutSection img {
+        display: none;
+    }
+
+    .aboutText h2{
+        font-size: 24px;
+    }
+
+    .aboutText p{
+        font-size: 14px;
+    }
+
+    .missionSection h2{
+        font-size: 24px;
+    }
+
+    .missionItems {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .missionItem p {
+        font-size: 14px;
+    }
+
+    .number {
+        font-size: 56px;
+    }
+    
+    .programSection h2 {
+        font-size: 24px;
+    }
+
+    .contactSection h2 {
+        font-size: 24px;
+    }
+
+}

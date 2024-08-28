@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './HomePage.module.css';
+import { Link } from 'react-router-dom';
 
 import purpleCourtImage from '../images/purple-court-graphic.jpg';
-import studentsImage from '../images/students-dec2023.jpg';
-import pizzaImage from '../images/pizza-dec2023.jpg';
 import tealCourtImage from '../images/teal-court.jpg';
 
 function HomePage() {
@@ -18,19 +17,13 @@ function HomePage() {
       </div>
 
       <div className={styles.aboutSection}>
-        <div className={styles.imageContainer}>
-          <img src={studentsImage} alt="Feather shuttle on a court" />
-          <img src={pizzaImage} alt="Winter Pizza Night 2023" />
-        </div>
-        <div className={styles.imageContainer}>
-          <img src={tealCourtImage} alt="Feather shuttles on court" />
-        </div>
+        <img src={tealCourtImage} alt="Feather shuttles on court" />
         <div className={styles.aboutText}>
           <h2>About</h2>
           <p>
           We are a local badminton club with the goal of providing accessible and affordable classes for youth. Led by a team of passionate badminton players, we dedicate ourselves to creating a safe, fun, and engaging learning environment for our students.
           </p>
-          <a href="/about" className={styles.readMore}>Read More</a>
+          <Link to="/about" className={styles.readMore}>Read More</Link>
         </div>
       </div>
 
@@ -50,35 +43,35 @@ function HomePage() {
 
       <div className={styles.programSection}>
         <h2>Our Programs</h2>
-        <p>Click on each program card to view more details.</p>
+        <p>Click on each program card to view more details. <strong>Please note that our classes for the 2024-25 school year are currently full.</strong></p>
         <div className={styles.programCards}>
-          <div className={styles.programCard}>
+          <Link to="/programs" className={styles.programCard}>
             <h3>Monday: Ages 9-12</h3>
-            <p>Mondays 6-8PM</p>
+            <p>Monday 6-8PM</p>
             <p>Stephen Lewis S.S.</p>
-          </div>
-          <div className={styles.programCard}>
+          </Link>
+          <Link to="/programs" className={styles.programCard}>
             <h3>Monday: Ages 13-17</h3>
-            <p>Mondays 7:30-10PM</p>
+            <p>Monday 7:30-10PM</p>
             <p>Stephen Lewis S.S.</p>
-          </div>
-          <div className={styles.programCard}>
+          </Link>
+          <Link to="/programs" className={styles.programCard}>
             <h3>Friday: Ages 9-12</h3>
-            <p>Fridays 6-8PM</p>
+            <p>Friday 6-8PM</p>
             <p>Meadowvale S.S.</p>
-          </div>
-          <div className={styles.programCard}>
+          </Link>
+          <Link to="/programs" className={styles.programCard}>
             <h3>Friday: Ages 13-17</h3>
-            <p>Fridays 6-8PM</p>
+            <p>Friday 6-8PM</p>
             <p>Meadowvale S.S.</p>
-          </div>
+          </Link>
         </div>
       </div>
 
       <div className={styles.contactSection}>
         <h2>Contact</h2>
         <p>Want to learn more? Feel free to reach out with questions about our programs or organization.</p>
-        <a href="/contact" className={styles.contactButton}>Let's Talk</a>
+        <Link to="/contact" className={styles.contactButton}>Let's Talk</Link>
       </div>
 
 
