@@ -1,0 +1,104 @@
+.headerContainer {
+    background-color: var(--primary);
+    padding: 36px;
+    text-align: center;
+    align-items: center;
+}
+
+.headerContainer img{
+    max-width: 100%;
+}
+
+.subTitleText {
+    font-size: 20px;
+    color: var(--primary-light);
+    font-style: italic;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.titleText {
+    font-size: 36px;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.required {
+    color: var(--alert);
+    font-weight: 700;
+}
+
+p {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.formContainer {
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactForm input:valid,
+.contactForm textarea:valid {
+  border: 2px solid var(--secondary);
+  outline: none;
+}
+
+.contactForm input,
+.contactForm textarea {
+  border: 1px solid var(--base-light);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border: 1px solid var(--primary);
+  outline: none;
+}
+
+.contactForm label {
+  display: block;
+  color: var(--base);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.submitButton {
+    padding: 12px 24px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+  
+.submitButton:disabled {
+    background-color: var(--text-light);
+    cursor: not-allowed;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .titleText {
+        font-size: 24px;
+    }
+
+    .subTitleText {
+        font-size: 18px;
+    }
+}
