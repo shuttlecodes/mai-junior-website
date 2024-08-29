@@ -43,10 +43,6 @@
     object-fit: cover;
 }
 
-.aboutText {
-    flex-basis: 35%;
-}
-
 .aboutText h2 {
     font-size: 30px;
     color: var(--base);
