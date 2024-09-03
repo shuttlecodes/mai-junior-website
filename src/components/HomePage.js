@@ -71,7 +71,7 @@ function HomePage() {
       <div className={styles.contactSection}>
         <h2>Contact</h2>
         <p>Want to learn more? Feel free to reach out with questions about our programs or organization.</p>
-        <Link to="/contact" className={styles.contactButton}>Let's Talk</Link>
+        <Link to="/temp-contact" className={styles.contactButton}>Let's Talk</Link>
       </div>
 
 

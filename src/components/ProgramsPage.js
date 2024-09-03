@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ProgramsPage.module.css';
+import Calendar from './Calendar';
 
 function ProgramsPage() {
   return (
@@ -8,6 +9,15 @@ function ProgramsPage() {
           <h1 className={styles.titleText}>Our Programs</h1>
           <h1 className={styles.subTitleText}>Currently teaching Fall 2024 to Spring 2025</h1>
       </div>
+
+      <div className={styles.programDetails}>
+        <h2>Calendar</h2>
+        <p>If you have any questions about these session times, please feel free to email us at maijuniorclub@gmail.com</p>
+        <div className={styles.calendarContainer}>
+          <Calendar />
+        </div>
+      </div>
+
       <div className={styles.programDetails}>
         <div>
           <h2>Mondays: September 16, 2024 to June 2, 2025</h2>
@@ -76,7 +86,8 @@ function ProgramsPage() {
           </div>
         </div>
       </div>
-      {/* Add interactive calendar here */}
+      
+
     </div>
   );
 }

@@ -2,10 +2,10 @@
     background-color: var(--primary);
     padding: 36px;
     text-align: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 80px;
 }
 
 .headerContainer img{
@@ -202,7 +202,8 @@
 
 @media only screen and (max-width: 1024px){
     .headerContainer {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .titleText {
