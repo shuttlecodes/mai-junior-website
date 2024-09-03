@@ -7,6 +7,7 @@ import HomePage from './components/HomePage';
 import ProgramsPage from './components/ProgramsPage';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
+import TempContactPage from './components/TempContactPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/programs" element={<ProgramsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/temp-contact" element={<TempContactPage />} />
       </Routes>
       </div>
     </Router>

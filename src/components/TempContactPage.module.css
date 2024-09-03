@@ -1,0 +1,28 @@
+.headerContainer {
+    background-color: var(--primary);
+    padding: 36px;
+    text-align: center;
+    align-items: center;
+}
+
+.headerContainer img{
+    max-width: 100%;
+}
+
+.subTitleText {
+    font-size: 20px;
+    color: var(--primary-light);
+    font-style: italic;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.titleText {
+    font-size: 36px;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.infoContainer {
+    padding: 50px;
+}

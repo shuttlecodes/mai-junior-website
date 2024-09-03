@@ -23,7 +23,7 @@ function Navbar() {
                 <Link to="/" className={isActive('/') ? 'active' : ''}>Home</Link>
                 <Link to="/programs" className={isActive('/programs') ? 'active' : ''}>Programs</Link>
                 <Link to="/about" className={isActive('/about') ? 'active' : ''}>About</Link>
-                <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>Contact Us</Link>
+                <Link to="/temp-contact" className={isActive('/temp-contact') ? 'active' : ''}>Contact</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>
