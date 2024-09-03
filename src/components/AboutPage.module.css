@@ -23,8 +23,63 @@
     font-weight: 700;
 }
 
-.historySection {
+.historySection, .futureSection {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: space-between;
     padding: 50px;
+    background-color: var(--text-light);
+    gap: 20px;
+}
+
+
+.historySection img, .futureSection img {
+    width: calc(100% - 20px);
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.historySection h2, .futureSection h2 {
+    font-size: 30px;
+    color: var(--base);
+    margin-bottom: 10px;
+}
+
+.historySection p, .futureSection p {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.coachSection {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.coachSection h2 {
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.coachSection p {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+
+.futureSection {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--text-light);
+    gap: 20px;
 }
 
 
