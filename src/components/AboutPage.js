@@ -15,7 +15,7 @@ function AboutPage() {
         <div>
           <h2>Mission</h2>
           <p>
-            Founded in 2020, MAI Junior Badminton Club is dedicated to providing accessible and affordable badminton classes for youth in our community.
+            Founded in 2020 by a local student, MAI Junior Badminton Club is dedicated to providing accessible and affordable badminton classes for youth in our community.
           </p>
           <p>
             <strong>Our Vision:</strong> At MAI Junior, we strive to make a positive impact in our community. 

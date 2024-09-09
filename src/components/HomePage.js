@@ -46,22 +46,22 @@ function HomePage() {
         <p>Click on each program card to view more details. <strong>Please note that our classes for the 2024-25 school year are currently full.</strong></p>
         <div className={styles.programCards}>
           <Link to="/programs" className={styles.programCard}>
-            <h3>Monday: Ages 9-12</h3>
-            <p>Monday 6-8PM</p>
+            <h3>Monday: Beginnner/Intermediate</h3>
+            <p>Monday 6-7:30PM</p>
             <p>Stephen Lewis S.S.</p>
           </Link>
           <Link to="/programs" className={styles.programCard}>
-            <h3>Monday: Ages 13-17</h3>
-            <p>Monday 7:30-10PM</p>
+            <h3>Monday: Advanced</h3>
+            <p>Monday 7:30-9PM</p>
             <p>Stephen Lewis S.S.</p>
           </Link>
           <Link to="/programs" className={styles.programCard}>
-            <h3>Friday: Ages 9-12</h3>
+            <h3>Friday: Beginnner/Intermediate</h3>
             <p>Friday 6-8PM</p>
             <p>Meadowvale S.S.</p>
           </Link>
           <Link to="/programs" className={styles.programCard}>
-            <h3>Friday: Ages 13-17</h3>
+            <h3>Friday: Advanced</h3>
             <p>Friday 6-8PM</p>
             <p>Meadowvale S.S.</p>
           </Link>

@@ -28,24 +28,22 @@ function ProgramsPage() {
 
           <div className={styles.programOptions}>
             <div>
-              <h3>Ages 9-12: 6-8PM</h3>
+              <h3>Beginner/Intermediate: 6-7:30PM</h3>
               <p>This class is intended for younger students with growing interest in the sport. Classes will be focused on skill development, with drills that are adaptable to varying skill levels.</p>
-              <ul>
+              {/* <ul>
                 <li>6 - 7:30 PM Instruction</li>
                 <li>7:30 - 8 PM Playtime</li>
-                <li>$750 per student</li>
-              </ul>
+              </ul> */}
               <button className={styles.registerButton}>Registration Full</button>
             </div>
             
             <div>
-              <h3>Ages 13-17: 7:30-10PM</h3>
+              <h3>Advanced: 7:30-9PM</h3>
               <p>This class is intended for older students looking to develop more advanced skills. Drills will be focused on improving shot selection, footwork, and game strategy.</p>
-              <ul>
+              {/* <ul>
                 <li>7:30 - 9 PM Instruction</li>
                 <li>9 - 10 PM Playtime</li>
-                <li>$750 per student</li>
-              </ul>
+              </ul> */}
               <button className={styles.registerButton}>Registration Full</button>
             </div>
           </div>
@@ -63,23 +61,21 @@ function ProgramsPage() {
 
           <div className={styles.programOptions}>
             <div>
-              <h3>Ages 9-12: 6-8PM</h3>
+              <h3>Beginner/Intermediate: 6-8PM</h3>
               <p>This class is intended for younger students with growing interest in the sport. Classes will be focused on skill development, with drills that are adaptable to varying skill levels.</p>
               <ul>
                 <li>6 - 7 PM Instruction</li>
                 <li>7 - 8 PM Playtime</li>
-                <li>$640 per student</li>
               </ul>
               <button className={styles.registerButton}>Registration Full</button>
             </div>
             
             <div>
-              <h3>Ages 13-17: 6-8PM</h3>
+              <h3>Advanced: 6-8PM</h3>
               <p>This class is intended for older students looking to develop more advanced skills. Drills will be focused on improving shot selection, footwork, and game strategy.</p>
               <ul>
                 <li>6 - 7 PM Playtime</li>
                 <li>7 - 8 PM Instruction</li>
-                <li>$640 per student</li>
               </ul>
               <button className={styles.registerButton}>Registration Full</button>
             </div>
